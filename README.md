@@ -8,7 +8,7 @@
 - Project link: https://apropos-project.eu/
 - License: MIT Copyright (c) 2023 APROPOS
 
-img src="APROPOS_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
+img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="40" height="40">
 
 
 - This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
