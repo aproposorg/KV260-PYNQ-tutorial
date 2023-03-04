@@ -1,0 +1,2 @@
+#define HLS_DEBUF_PRINT
+#define PI 3.1415926535898
