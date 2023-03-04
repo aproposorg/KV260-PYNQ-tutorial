@@ -7,21 +7,24 @@
 The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090.
 
 Project link: https://apropos-project.eu/
-![APROPOS](/image/APROPOS.png | width=100)
+
+img src="APROPOS_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
 
 
 This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
 
-![HARDSYDR](/image/HWSYDR.png  | width=100)
+
+<img src="HWSYDR_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
 
 
 
 ### The contributors of this tutorial are:
-Jie Lei, Universitat Politenica de Valencia, Spain
+    Jie Lei, Universitat Politenica de Valencia, Spain
 
-Hans Jakob Damsgaard, Tampere University, Finland 
+    Hans Jakob Damsgaard, Tampere University, Finland 
 
-Antoine Grenier, Tampere University, Finland 
+    Antoine Grenier, Tampere University, Finland 
+
 
 This tutorial contain work from ``Syd Project`` https://github.com/aproposorg/sydr developed by Antoine Grenier.
 
