@@ -40,31 +40,31 @@ This design shows a simple PYNQ design that calculates correlation coefficients 
 ## C function to be accelerated
 This function is part of an open-source Software Defined Radio (SDR) for GNSS processing developed in Python, namely "Sydr" https://github.com/aproposorg/sydr developed by Antoine Grenier.
  
-The ''getCorrelator'' function can be viewed in https://github.com/aproposorg/sydr/blob/69d1ddf1f0caf7786600dcefa65ae81e2876a8c2/core/c_functions/tracking.c 
+- The ''getCorrelator'' function can be viewed in https://github.com/aproposorg/sydr/blob/69d1ddf1f0caf7786600dcefa65ae81e2876a8c2/core/c_functions/tracking.c 
 
 ## Interface of the HLS design
 
 This design use AXI Stream interface that supports dataflow type FPGA design to deliver fast and easy communication between the FPGA and host or within the FPGA itself. 
 
-The HLS design structure is based on the PYNQ tutorial written by Cathal McCabe from AMD.
+- The HLS design structure is based on the PYNQ tutorial written by Cathal McCabe from AMD.
 https://github.com/cathalmccabe/PYNQ_tutorials/blob/master/hls_m_axi/hls_m_axi_tutorial.md
 
-To learn more about  AXI stream in Xilinx HLS, read Xilinx document ug1399 
+- To learn more about  AXI stream in Xilinx HLS, read Xilinx document ug1399 
 https://docs.xilinx.com/r/2022.1-English/ug1399-vitis-hls/AXI-Adapter-Interface-Protocols
 
 ## Side Note before we start
   
-The implemented ``getCorrelator`` function in the HLS allow python to pass two ``double array[5]`` into the FPGA. 
+- The implemented ``getCorrelator`` function in the HLS allow python to pass two ``double array[5]`` into the FPGA. 
 	Then the FPGA will calculate its ``r_iCorr`` and ``r_qCorr``. These two values will be returned as an ``double return_array[5]``
 
 
-The AXI Stream example used in this design is simple to design and use in PYNQ. It allow Python to pass a buffer address to the FPGA, then following a control signal, the FPGA can start the calculation, then the result can be returned as buffer and arrives back to the python environment. 
+- The AXI Stream example used in this design is simple to design and use in PYNQ. It allow Python to pass a buffer address to the FPGA, then following a control signal, the FPGA can start the calculation, then the result can be returned as buffer and arrives back to the python environment. 
 
-This tutorial will not optimize the HLS code since the optimization of C code for adapting HLS style can be designed depended.
+- This tutorial will not optimize the HLS code since the optimization of C code for adapting HLS style can be designed depended.
 
-The design files: Vitis HLS project, Vivado, Bitstream will be open accessed. 
+- The design files: Vitis HLS project, Vivado, Bitstream will be open accessed. 
 
-The board we use here is Kria KV260 from AMD Xilinx. FPGA Part number: `XCK26-SFVC784-2LV-C`
+- The board we use here is Kria KV260 from AMD Xilinx. FPGA Part number: `XCK26-SFVC784-2LV-C`
 
 # Setup C design golden reference
 
@@ -97,7 +97,7 @@ We will also cover that in the next section.
 ## Create a new project
 Now we can use Vitis 2022.1 to create a new project for our board Xilinx KV260.
 
-This new board recentlly gained support in PYNQ, read more at https://github.com/Xilinx/Kria-PYNQ
+- This new board recentlly gained support in PYNQ, read more at https://github.com/Xilinx/Kria-PYNQ
 
 Note: You may run into error when choosing the KV260 board in Vitis HLS. The error message is "Can not find part number". This is a known bug in Vitis HLS. The solution is to choose the part number directly instead of choosing the board.
 
@@ -240,6 +240,11 @@ M00_AXI -> S_AXI_HP0_FPD
 // You may also need to connect all acknowledge signal together within a IP and interupt signal.
 // You can see the attached image for the connection.
 ```
+The connection will be 
+
+<img src="VIVADO_BLOCK1_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
+
+
 
 ## Generate bitstream
 
