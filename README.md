@@ -10,13 +10,13 @@
 
 img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="40" height="40">
 
-<img src="hhttps://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
+<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
 
 - This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
 
 
 
-<img src="HWSYDR_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
+<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" width="70" height="70">
 
 
 
@@ -239,10 +239,13 @@ M00_AXI -> S_AXI_HP0_FPD
 // You may also need to connect all acknowledge signal together within a IP and interupt signal.
 // You can see the attached image for the connection.
 ```
-The connection will be 
+The connection of interfaces will be 
 
-<img src="VIVADO_BLOCK1_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
+<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/VIVADO_BLOCK_1.png" >
 
+The full block design will be
+
+https://github.com/aproposorg/KV260-PYNQ-tutorial/blob/main/HW_VIVADO/getCorrelator/design_1.pdf
 
 
 ## Generate bitstream
