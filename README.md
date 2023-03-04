@@ -76,7 +76,7 @@ double qSignal[5] = {41.46545312310088, 22.992557140364028, -13.982653668826686,
 
 ```
 
-will produce correlation result 
+will produce correlation results
 
 ```c
  r_iCorr: 23.3508
@@ -84,6 +84,8 @@ will produce correlation result
 ```
 
 We now can use this two value as reference to compare with the HLS design output.
+
+You can see the result in SW_PYNQ/HLS_AXI_MASTER_TRACKING.ipynb matches with the golden reference.
 
 In reality  this type of golden reference can be also done in the HLS project itself by execute the golden reference in the testbench of HLS project.
 We will also cover that in the next section.
