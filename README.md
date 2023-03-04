@@ -4,14 +4,14 @@
 
 ## Acknowledgement
 
-The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090.
+- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090.
 
-Project link: https://apropos-project.eu/
+- Project link: https://apropos-project.eu/
 
 img src="APROPOS_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
 
 
-This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
+- This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
 
 
 <img src="HWSYDR_SOURCELINK_VALID_AFTER_PUBLIC" width="40" height="40">
@@ -19,16 +19,17 @@ This work also within the scope of the Hardware aceleration for GNSS receiver pr
 
 
 ### The contributors of this tutorial are:
-    Jie Lei, Universitat Politenica de Valencia, Spain
+- Jie Lei, Universitat Politenica de Valencia, Spain
 
-    Hans Jakob Damsgaard, Tampere University, Finland 
+- Hans Jakob Damsgaard, Tampere University, Finland 
 
-    Antoine Grenier, Tampere University, Finland 
+- Antoine Grenier, Tampere University, Finland 
 
+### Source code may contain work from:
 
-This tutorial contain work from ``Syd Project`` https://github.com/aproposorg/sydr developed by Antoine Grenier.
+- ``Sydr Project`` https://github.com/aproposorg/sydr developed by Antoine Grenier.
 
-Some code also adpated from AMD Xilinx tutorial.
+- AMD Xilinx tutorial.
 
 
 
