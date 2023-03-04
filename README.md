@@ -10,6 +10,7 @@
 
 img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="40" height="40">
 
+<img src="hhttps://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
 
 - This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
 
