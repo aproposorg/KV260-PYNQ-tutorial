@@ -8,16 +8,6 @@ This repository contains a simple PYNQ design that calculates correlation coeffi
 
 The tutorial will cover the PYNQ design flow, including how to port a C function into HLS styled C in Vitis HLS, how to Vivado block design for KV260, how to create a PYNQ overlay, how to use the overlay in python environment.
 
-## Acknowledgement
-
-
-<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="140">
-
-- This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr. The Python version of this project is called Sydr. https://github.com/aproposorg/sydr
-
-- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
-
-- License: MIT Copyright (c) 2023 APROPOS
 
 
 
@@ -269,3 +259,17 @@ Visit the SW_PYNQ folder for the python code.
 
 https://github.com/aproposorg/KV260-PYNQ-tutorial/tree/main/SW_PYNQ/getCorrelator
 
+
+---
+---
+
+## Acknowledgement
+
+
+<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="140">
+
+- This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr. The Python version of this project is called Sydr. https://github.com/aproposorg/sydr
+
+- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
+
+- License: MIT Copyright (c) 2023 APROPOS
