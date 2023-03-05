@@ -1,6 +1,7 @@
 
 # Simple PYNQ KV260 tutorial: Porting C-based design into FPGA via Xilinx HLS
  
+
 ## Description
 
 This repository contains a simple PYNQ design that calculates correlation coefficients from two given signals. This function will be implemented in FPGA via Xilinx HLS, it is called ''getCorrelator''.
@@ -9,14 +10,14 @@ The tutorial will cover the PYNQ design flow, including how to port a C function
 
 ## Acknowledgement
 
-- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
 
-  - License: MIT Copyright (c) 2023 APROPOS
-
+<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/TWO_LOGO.png" width="600" height="120">
 
 - This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr.
 
-<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/TWO_LOGO.png" width="600" height="120">
+- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
+
+  - License: MIT Copyright (c) 2023 APROPOS
 
 
 ### The contributors of this tutorial are:
