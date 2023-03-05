@@ -16,7 +16,7 @@ The tutorial will cover the PYNQ design flow, including how to port a C function
 
 - This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr.
 
- - <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/TWO_LOGO.png" width="600" height="120">
+<img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/TWO_LOGO.png" width="600" height="120">
 
 
 ### The contributors of this tutorial are:
