@@ -19,9 +19,9 @@ The tutorial will cover the PYNQ design flow, include how to port a C function i
   <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" width="80" height="70">
 
 
-
+Politecnica
 ### The contributors of this tutorial are:
-- `Jie Lei`, Universitat Politenica de Valencia, Spain
+- `Jie Lei`, Universitat Politècnica de Valencia, Spain
 - `Hans Jakob Damsgaard`, Tampere University, Finland 
 - `Antoine Grenier`, Tampere University, Finland 
 
