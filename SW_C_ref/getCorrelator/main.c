@@ -56,7 +56,7 @@ int main(){
 
     getCorrelator(iSignal, qSignal, code, size, codeStep, remCodePhase, correlatorSpacing, &r_iCorr, &r_qCorr);
 
-    printf( "remCodePhase: %.4f \n correlatorSpacing: %.4f\n &r_iCorr: %.4f\n &r_qCorr: %.4f\n "
+    printf( "remCodePhase: %.4f \n correlatorSpacing: %.4f\n r_iCorr: %.4f\n r_qCorr: %.4f\n "
             ,remCodePhase, correlatorSpacing, r_iCorr, r_qCorr);
 }
 
