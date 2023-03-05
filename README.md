@@ -1,5 +1,5 @@
 
-# Simple PYNQ KV260 tutorial: Porting C-based design into FPGA via Xilinx HLS
+# Simple PYNQ KV260 tutorial: Porting SYDR C-based design into FPGA via Xilinx HLS
  
 
 ## Description
