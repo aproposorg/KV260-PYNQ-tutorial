@@ -21,9 +21,9 @@
 
 
 ### The contributors of this tutorial are:
-- Jie Lei, Universitat Politenica de Valencia, Spain
-- Hans Jakob Damsgaard, Tampere University, Finland 
-- Antoine Grenier, Tampere University, Finland 
+- `Jie Lei`, Universitat Politenica de Valencia, Spain
+- `Hans Jakob Damsgaard`, Tampere University, Finland 
+- `Antoine Grenier`, Tampere University, Finland 
 
 ### Source code may contain work from:
 
