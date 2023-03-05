@@ -16,7 +16,7 @@
 - This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
 
 
-  <img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" width="70" height="70">
+  <img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" width="80" height="70">
 
 
 
