@@ -11,13 +11,13 @@ The tutorial will cover the PYNQ design flow, including how to port a C function
 ## Acknowledgement
 
 
-<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="140">
+<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="130">
 
 - This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr.
 
 - The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
 
-  - License: MIT Copyright (c) 2023 APROPOS
+- License: MIT Copyright (c) 2023 APROPOS
 
 
 
