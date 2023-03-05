@@ -1,6 +1,11 @@
 
 # Simple PYNQ KV260 tutorial: Porting C-based design into FPGA via Xilinx HLS
  
+## Description
+
+This repository contains a simple PYNQ design that calculates correlation coefficients from two given signals. This function will be implemented in FPGA via Xilinx HLS, it called ''getCorrelator''.
+
+The tutorial will cover the PYNQ design flow, include how to port a C function into HLS styled C in Vitis HLS, how to Vivado block design for KV260, how to create a PYNQ overlay, how to use the overlay in python environment.
 
 ## Acknowledgement
 
