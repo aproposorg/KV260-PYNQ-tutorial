@@ -10,7 +10,7 @@
   
   License: MIT Copyright (c) 2023 APROPOS
 
-  <img src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
+  <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
 
 
 - This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
@@ -98,7 +98,7 @@ Now we can use Vitis 2022.1 to create a new project for our board Xilinx KV260.
 
 - This new board recentlly gained support in PYNQ, read more at https://github.com/Xilinx/Kria-PYNQ
 
-Note: You may run into error when choosing the KV260 board in Vitis HLS. The error message is "Can not find part number". This is a known bug in Vitis HLS. The solution is to choose the part number directly instead of choosing the board.
+Note: You may run into error when choosing the KV260 board in Vitis HLS. The error message is "Can not find part number". The solution is to choose the part number directly instead of choosing the board.
 
 So choose the part number XCK26-SFVC784-2LV-C or choose the SOM version of this part number from board list.
 
