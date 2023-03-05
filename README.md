@@ -26,7 +26,7 @@ The tutorial will cover the PYNQ design flow, include how to port a C function i
 
 ### Source code may contain work from:
 
-- ``Sydr Project`` https://github.com/aproposorg/sydr developed by Antoine Grenier.
+- ``Sydr`` An open-source GNSS Software Defined Radio for algorithm benchmarking. https://github.com/aproposorg/sydr developed by Antoine Grenier.
 - AMD Xilinx tutorial.
 
 
