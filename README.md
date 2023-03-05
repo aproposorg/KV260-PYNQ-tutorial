@@ -11,7 +11,7 @@ The tutorial will cover the PYNQ design flow, including how to port a C function
 ## Acknowledgement
 
 
-<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="130">
+<img align="right" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" height="140">
 
 - This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr. The Python version of this project is called Sydr. https://github.com/aproposorg/sydr
 
