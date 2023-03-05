@@ -3,9 +3,9 @@
  
 ## Description
 
-This repository contains a simple PYNQ design that calculates correlation coefficients from two given signals. This function will be implemented in FPGA via Xilinx HLS, it called ''getCorrelator''.
+This repository contains a simple PYNQ design that calculates correlation coefficients from two given signals. This function will be implemented in FPGA via Xilinx HLS, it is called ''getCorrelator''.
 
-The tutorial will cover the PYNQ design flow, include how to port a C function into HLS styled C in Vitis HLS, how to Vivado block design for KV260, how to create a PYNQ overlay, how to use the overlay in python environment.
+The tutorial will cover the PYNQ design flow, including how to port a C function into HLS styled C in Vitis HLS, how to Vivado block design for KV260, how to create a PYNQ overlay, how to use the overlay in python environment.
 
 ## Acknowledgement
 
@@ -15,7 +15,7 @@ The tutorial will cover the PYNQ design flow, include how to port a C function i
   - <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
 
 
-- This work also within the scope of the Hardware aceleration for GNSS receiver project called Hard Sydr.
+- This work is also within the scope of the Hardware acceleration for GNSS receiver project called Hard Sydr.
  - <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/HWSYDR.png" width="80" height="70">
 
 
@@ -40,7 +40,7 @@ This function is part of an open-source Software Defined Radio (SDR) for GNSS pr
 
 ## Interface of the HLS design
 
-This design use AXI Stream interface that supports dataflow type FPGA design to deliver fast and easy communication between the FPGA and host or within the FPGA itself. 
+This design uses AXI Stream interface that supports dataflow type FPGA design to deliver fast and easy communication between the FPGA and host or within the FPGA itself. 
 
 - The HLS design structure is based on the PYNQ tutorial written by Cathal McCabe from AMD.
 https://github.com/cathalmccabe/PYNQ_tutorials/blob/master/hls_m_axi/hls_m_axi_tutorial.md
@@ -51,12 +51,12 @@ https://docs.xilinx.com/r/2022.1-English/ug1399-vitis-hls/AXI-Adapter-Interface-
 ## Side Note before we start
   
 - The implemented ``getCorrelator`` function in the HLS allow python to pass two ``double array[5]`` into the FPGA. 
-	Then the FPGA will calculate its ``r_iCorr`` and ``r_qCorr``. These two values will be returned as an ``double return_array[5]``
+  Then the FPGA will calculate its ``r_iCorr`` and ``r_qCorr``. These two values will be returned as an ``double return_array[5]``
 
 
-- The AXI Stream example used in this design is simple to design and use in PYNQ. It allow Python to pass a buffer address to the FPGA, then following a control signal, the FPGA can start the calculation, then the result can be returned as buffer and arrives back to the python environment. 
+- The AXI Stream example used in this design is simple to design and use in PYNQ. It allows Python to pass a buffer address to the FPGA, then following a control signal, the FPGA can start the calculation, then the result can be returned as a buffer and arrives back to the python environment. 
 
-- This tutorial will not optimize the HLS code since the optimization of C code for adapting HLS style can be designed depended.
+- This tutorial will not optimize the HLS code since optimizing C code for adapting HLS style can be design dependent.
 
 - The design files: Vitis HLS project, Vivado, Bitstream will be open accessed. 
 
@@ -64,9 +64,9 @@ https://docs.xilinx.com/r/2022.1-English/ug1399-vitis-hls/AXI-Adapter-Interface-
 
 # Setup C design golden reference
 
-Our aim to to port a C function into HLS styled C in Vitis HLS. First, we need setuo golden reference by obtaining the C function output.
+We aim to port a C function into HLS styled C in Vitis HLS. First, we need set uopgolden reference by obtaining the C function output.
 
-The C function will process the corrolation between two given signals namely ``iSignal`` and ``qSignal``. The calculation involve simple addtion and multiplication.
+The C function will process the correlation between two given signals namely ``iSignal`` and ``qSignal``. The calculation involves simple addition and multiplication.
 
 As we can see, two signal 
 ```c
@@ -83,11 +83,11 @@ will produce correlation results
  r_qCorr: 24.3043
 ```
 
-We now can use this two value as reference to compare with the HLS design output.
+We can now use these two values to compare with the HLS design output.
 
-You can see the result in SW_PYNQ/HLS_AXI_MASTER_TRACKING.ipynb matches with the golden reference.
+The result in SW_PYNQ/HLS_AXI_MASTER_TRACKING.ipynb matches with the golden reference.
 
-In reality  this type of golden reference can be also done in the HLS project itself by execute the golden reference in the testbench of HLS project.
+In reality this type of golden reference can also be done in the HLS project itself by executing the golden reference in the testbench of HLS project.
 We will also cover that in the next section.
 
 # Vitis HLS design
@@ -95,14 +95,14 @@ We will also cover that in the next section.
 ## Create a new project
 Now we can use Vitis 2022.1 to create a new project for our board Xilinx KV260.
 
-- This new board recentlly gained support in PYNQ, read more at https://github.com/Xilinx/Kria-PYNQ
+- This new board recently gained support in PYNQ; read more at https://github.com/Xilinx/Kria-PYNQ
 
-Note: You may run into error when choosing the KV260 board in Vitis HLS. The error message is "Can not find part number". The solution is to choose the part number directly instead of choosing the board.
+Note: You may run into an error when choosing the KV260 board in Vitis HLS. The error message is "Can not find part number". The solution is to choose the part number directly instead of choosing the board.
 
-So choose the part number XCK26-SFVC784-2LV-C or choose the SOM version of this part number from board list.
+So choose the part number XCK26-SFVC784-2LV-C or choose the SOM version of this part number from the board list.
 
 ## Create interfaces
-Since the C function we want to port is using double array, we need to create a double array interface in the HLS project. We can pass address of the array to the HLS function.
+Since the C function, we want to port uses using the double array, we need to create a double array interface in the HLS project. We can pass the address of the array to the HLS function.
 
 ```c
 void example(
@@ -122,14 +122,14 @@ We also need to tell HLS the depth of the array. In this case, we have two array
 #pragma HLS INTERFACE m_axi port=OUT_Corr depth=2 offset=slave 
 ```
 
-Note we also need to enable control signal for the HLS function. It allow us to control the start and end of HLS kernel from python with a simple register overwirte. 
+Note we also need to enable the control signal for the HLS function. It allows us to control the start and end of the HLS kernel from python with a simple register overwrite. 
 This is done by adding the following pragma.
 
 ```c
  #pragma HLS INTERFACE s_axilite port=return
 ```
 
-Since the interface allow us to pass the array, we can use memory copy function to link the input with the internal variable. 
+Since the interface allows us to pass the array, we can use the memory copy function to link the input with the internal variable. 
 
 ```c
   memcpy(iSignal,(  double*)IN_0, 5*sizeof(double));
@@ -145,9 +145,9 @@ for (int i = 0; i < 5; i++){
     }  
 ```
 
-Now we need to write the function for the ``getCorrelator`` by directing copying the C function into HLS. Some modification will be made, such as addping complex number header file, change some datatype that supported by HLS.
+Now we need to write the function for the ``getCorrelator`` by directing copying the C function into HLS. Some modifications will be made, such as adding a complex number header file, and changing some datatype that HLS supports.
 
-After adding the function, we can call it just like we call a function in the C programing. 
+After adding the function, we can call it just like we call a function in C programing. 
 
 ```c
 getCorrelator(iSignal, qSignal, &r_iCorr, &r_qCorr);
@@ -159,18 +159,18 @@ After calculation, we obtain the results and save it
 ```
 
 ## Testbench
-We have a design written, now need a test bench for function verfication.
+We have a design written, but now need a test bench for function verification.
 
-The testbench is very strightforward, create data and pass it to the HLS function. Then compare the result with the golden reference that simply run the C function.
+The testbench is very straightforward, create data and pass it to the HLS function. Then compare the result with the golden reference that simply runs the C function.
 
-We can compare the HLS result with C result, and printing visul hint to indicate the result is correct or not.
+We can compare the HLS result with C result, and print a visul hint to indicate whether the result is correct.
 
 ## Synthesis and Co-simulation
 
-Now, start the C simulation to check for funcionality.
+Now, start the C simulation to check for functionality.
 Synthesis and Co-simulation for detailed timing result and recomendation for optimization. 
 
-The recommendations are important for delivering better performance of the design. 
+The recommendations are essential for delivering the better performance of the design. 
 
 You may see the pass message regarding the matching result 
 ```c
@@ -195,17 +195,17 @@ INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 ## IP Export
 Now we can export our design as IP into a Zip file.
 Give it a specific name such ``IP_getCorrelator_2023``
-You can inspect the zip file which contain some HDL files and configuration files
+You can inspect the zip file, which contain some HDL files and configuration files
 
 # Vivado block design
 
-The purpose of Vivado design is to generate bitstream for our HLS design. The IP can not work alone, it need to be connected to the rest of the design such as ZYNQ controller, AXI interconnects for our stream interface.
+The purpose of Vivado design is to generate bitstream for our HLS design. The IP can not work alone, it needs to be connected to the rest of the design, such as ZYNQ controller, AXI interconnects for our stream interface.
 
-In a simple design, this step is simple and straight forward. We can just drag and drop the IP into the block design and connect the interface.
+In a simple design, this step is straightforward. We can just drag and drop the IP into the block design and connect the interface.
 
 ## Create a new board design
 
-Create a new board design for the KV260 board, and create a new block design. 
+Create a new board design for the KV260 board and a new block design. 
 
 add the following IP into the block design
 1) 1x ZYNQ Processing System
@@ -216,7 +216,7 @@ add the following IP into the block design
 
 ## Connect the IP
 
-The connection can be done aotomatically by Vivado, but we need to guide the automation by made some manual connection.
+The connection can be made automatically by Vivado, but we need to guide the automation by making some manual connections.
 
 ```c
 // From HLS IP to first AXI Interconnect
@@ -232,10 +232,10 @@ S01_AXI -> M_AXI_HPM1_FPD
 // From second AXI Interconnect to ZYNQ 
 M00_AXI -> S_AXI_HP0_FPD
 
-// NOTE: Some port may not appear in your design, you can enable some port from the IP properties
+// NOTE: Some ports may not appear in your design. You can enable some port from the IP properties.
 // Such as S_AXI_HP0_FPD
 
-// You may also need to connect all acknowledge signal together within a IP and interupt signal.
+// You may also need to connect all acknowledge signals together within a IP and interrupt signal.
 // You can see the attached image for the connection.
 ```
 The connection of interfaces will be 
@@ -249,15 +249,15 @@ https://github.com/aproposorg/KV260-PYNQ-tutorial/blob/main/HW_VIVADO/getCorrela
 
 ## Generate bitstream
 
-Make sure you validate the block design, and generate wrapper. 
+Make sure you validate the block design, and generate a wrapper. 
 Then generate the bitstream.
 
 ## Export the design
 
 For the PYNQ workflow, you need to find the bitstream and hardware description file hwh. 
-Simple way is to search the ``.bit`` and ``.hwh`` file in the project folder.
-To copy it to the Jupiter enviroment in  PYNQ board.
-The name of this two file need to be matched.
+A simple way is to search the ``.bit`` and ``.hwh`` file in the project folder.
+To copy it to the Jupiter environment in  PYNQ board.
+The name of these two file needs to be matched.
 
 
 # PYNQ workflow
