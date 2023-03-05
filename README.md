@@ -9,8 +9,8 @@ The tutorial will cover the PYNQ design flow, include how to port a C function i
 
 ## Acknowledgement
 
-- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090.
-  - Project link: https://apropos-project.eu/
+- The work is conducted within the project APROPOS. This project has received funding from the European Union’s Horizon 2020 (H2020) Marie Sklodowska-Curie Innovative Training Networks H2020-MSCA-ITN-2020 call, under the Grant Agreement no 956090. Project link: https://apropos-project.eu/
+
   - License: MIT Copyright (c) 2023 APROPOS
   <img style="float: right;" src="https://raw.githubusercontent.com/aproposorg/KV260-PYNQ-tutorial/main/image/APROPOS.png" width="200" />
 
