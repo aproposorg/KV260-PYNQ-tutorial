@@ -266,5 +266,5 @@ The name of this two file need to be matched.
 Now you can read the following python code to understand how to use the HLS IP in PYNQ board.
 Visit the SW_PYNQ folder for the python code.
 
-
+https://github.com/aproposorg/KV260-PYNQ-tutorial/tree/main/SW_PYNQ/getCorrelator
 
