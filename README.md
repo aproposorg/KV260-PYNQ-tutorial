@@ -21,7 +21,9 @@ The tutorial will cover the PYNQ design flow, including how to port a C function
  ---
 [Tutorial 1: Porting a C function to Xilinx HLS, with stream interface](/Readme_getCorrelator.md)
 
-[Tutorial 2: Using Xilinx FFT IP with DMA and stream interface](/Readme_X_FFT.md)
+[Tutorial 2: Using Xilinx FFT IP with DMA and AXI mater interface](/Readme_X_FFT.md)
+
+[Tutorial 2: DMA with HLS stream based IP](/dma_ip_stream.md)
 
 ---
 
